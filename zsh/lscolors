@@ -1,0 +1,39 @@
+The color designators are as follows:
+
+a     black
+b     red
+c     green
+d     brown
+e     blue
+f     magenta
+g     cyan
+h     light grey
+A     bold black, usually shows up as dark grey
+B     bold red
+C     bold green
+D     bold brown, usually shows up as yellow
+E     bold blue
+F     bold magenta
+G     bold cyan
+H     bold light grey; looks like bright white
+x     default foreground or background
+
+Note that the above are standard ANSI colors.  The actual display may differ depending on the color capabilities of the terminal in use.
+
+The order of the attributes are as follows:
+
+Num.  Name                                              Color-combo  Foreground  Background
+1.    directory                                         ex           blue        default
+2.    symbolic-link                                     fx           magenta     default
+3.    socket                                            cx           green       default
+4.    pipe                                              dx           brown       default
+5.    executable                                        bx           red         default
+6.    block-special                                     eg           blue        cyan
+7.    character-special                                 ed           blue        brown
+8.    executable-with-setuid-bit-set                    ab           black       red
+9.    executable-with-setgid-bit-set                    ag           black       cyan
+10.   directory-writable-to-others,-with-sticky-bit     ac           black       green
+11.   directory-writable-to-others,-without-sticky-bit  ac           black       green
+
+The default is "exfxcxdxbxegedabagacad", i.e. blue foreground and default background for regular directories, black foreground and red back-
+ground for setuid executables, etc.

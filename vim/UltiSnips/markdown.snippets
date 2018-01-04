@@ -1,0 +1,84 @@
+# Possibly for Swift expansion?? Idk, look into when the time comes.
+# extends cpp
+extends rb, ruby, ru
+
+snippet ruby "Add Ruby syntax highlighting" t
+~~~ ruby
+${1}${VISUAL:# Code goes here!}
+~~~${0}
+endsnippet
+
+
+snippet swift "Add Swift syntax highlighting" t
+~~~ swift
+${1}${VISUAL:# Code goes here!}
+~~~${0}
+endsnippet
+
+snippet "pr?o?j?" "Make a project post" r
+---
+title: "${1:Post Title}"
+date: `date "+%Y-%m-%d% %H:%M:%S"`
+categories: projects
+---${0}
+endsnippet
+
+snippet "build?i?n?g?" "Make a building blocks post" r
+---
+layout: post
+title: "${0:Post Title}"
+date: `date "+%Y-%m-%d% %H:%M:%S"`
+categories: projects building_blocks
+---
+endsnippet
+
+snippet num
+`printf('%-4d', line('.'))`${VISUAL}
+endsnippet
+
+snippet url "Add a Jekyll url from projects" i
+{% post_url projects/${0} %}
+endsnippet
+
+snippet conv-webmd ""
+/class=""klcodeVndV/\/fig	ruby	jk/\/td/\/figkbkbkbkbkbkbV/\/figdj
+endsnippet
+
+snippet title "make a title"
+---
+title: ${1:Post Title}
+---${0}
+endsnippet
+
+snippet note "make a note"
+<div class="note">
+${1:${VISUAL}}
+</div>${0}
+endsnippet
+
+snippet bold "make visual selection bolded" i
+**${1:${VISUAL}}**${0}
+endsnippet
+
+snippet "itali?c?s?" "place backticks around a visual selection" ir
+_${1:${VISUAL}}_${0}
+endsnippet
+
+snippet "striket?h?r?o?u?g?h?" "place backticks around a visual selection" ir
+~~${1:${VISUAL}}~~${0}
+endsnippet
+
+snippet "link" "place backticks around a visual selection" ir
+[${1:${VISUAL}}](${2})${0}
+endsnippet
+
+snippet "newblog" "front matter for a new blog post" ir
+---
+title: ${1}
+description: ${2}
+date: `date "+%Y-%m-%d"`${3}
+tags: ${4}
+---
+${0}
+endsnippet
+

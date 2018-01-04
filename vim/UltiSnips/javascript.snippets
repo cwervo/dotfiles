@@ -1,0 +1,26 @@
+snippet doc "Create Hologram documentation template"
+/*doc
+---
+title: ${1:Title}
+category: ${2:Category}
+---
+${3:// Text goes here. }
+
+\`\`\`haml_example
+${4:-# Haml example goes here.}
+\`\`\`
+*/
+endsnippet
+
+snippet p5 "Make some default p5.js boilerplate" i
+var bg = 0
+
+function setup() {
+	createCanvas(600, 600);
+}
+
+function draw() {
+	background(bg);
+	${1:// Draw some stuff!}
+}
+endsnippet
