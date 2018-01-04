@@ -106,7 +106,7 @@ fi
 # until the Clojure ecosystem can handle Java 9
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
-source ~/.zsh/aliases.sh
-source ~/.zsh/npm-completion.sh
-source ~/.zsh/iTerm2-colors.sh
+source ~/dotfiles/zsh/aliases.sh
+source ~/dotfiles/zsh/npm-completion.sh
+source ~/dotfiles/zsh/iTerm2-colors.sh
 setopt interactivecomments
