@@ -1,0 +1,8 @@
+vim/bundle/*
+vim/.netrwhist
+vim/Session.vim
+
+
+tmux/plugins/*
+tmux/resurrect/*
+tmux/sidebar/*
