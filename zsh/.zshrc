@@ -110,3 +110,16 @@ source ~/dotfiles/zsh/aliases.sh
 source ~/dotfiles/zsh/npm-completion.sh
 source ~/dotfiles/zsh/iTerm2-colors.sh
 setopt interactivecomments
+
+export PATH=/Users/andrescuervo/.local/bin/luna-studio:$PATH
+
+# Set up portable Emscripten to path
+# Followed this tutorial: https://kripken.github.io/emscripten-site/docs/getting_started/downloads.html#installation-instructions
+# Adding directories to PATH:
+export PATH=/Users/andrescuervo/code/emsdk-portable/clang/e1.37.28_64bit:$PATH
+export PATH=/Users/andrescuervo/code/emsdk-portable/node/4.1.1_64bit/bin:$PATH
+export PATH=/Users/andrescuervo/code/emsdk-portable/emscripten/1.37.28:$PATH
+# Setting environment variables:
+export EMSDK=/Users/andrescuervo/code/emsdk-portable:$PATH
+export BINARYEN_ROOT=/Users/andrescuervo/code/emsdk-portable/clang/e1.37.28_64bit/binaryen:$PATH
+export EMSCRIPTEN=/Users/andrescuervo/code/emsdk-portable/emscripten/1.37.28:$PATH
