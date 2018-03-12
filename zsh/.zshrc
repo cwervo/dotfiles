@@ -123,5 +123,10 @@ export PATH=/Users/andrescuervo/code/emsdk-portable/emscripten/1.37.28:$PATH
 export EMSDK=/Users/andrescuervo/code/emsdk-portable:$PATH
 export BINARYEN_ROOT=/Users/andrescuervo/code/emsdk-portable/clang/e1.37.28_64bit/binaryen:$PATH
 export EMSCRIPTEN=/Users/andrescuervo/code/emsdk-portable/emscripten/1.37.28:$PATH
+#
+# Add these lines for Carp installation: https://github.com/carp-lang/Carp/blob/master/docs/Install.md
+export PATH=~/.local/bin:$PATH
+export CARP_DIR=~/Carp/
+
 
 export MAKEFLAGS="-j8 -s"
