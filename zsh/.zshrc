@@ -89,7 +89,7 @@ chmod 600 "${SSH_ENV}"
 export PATH=$PATH:/.rvm/bin # Add RVM to PATH for scripting
 export PATH="/usr/local/mysql/bin:$PATH"
 export PATH="$HOME/Library/Haskell/bin:$PATH" # add Haskell to path
-source $HOME/.cargo/env # Add cargo (Rust) to path
+# source $HOME/.cargo/env # Add cargo (Rust) to path
 export GOPATH=$HOME/go # Add go path
 export PATH=$PATH:$GOPATH/bin
 export EDITOR='nvim'
@@ -125,6 +125,7 @@ export BINARYEN_ROOT=/Users/andrescuervo/code/emsdk-portable/clang/e1.37.28_64bi
 export EMSCRIPTEN=/Users/andrescuervo/code/emsdk-portable/emscripten/1.37.28:$PATH
 #
 # Add these lines for Carp installation: https://github.com/carp-lang/Carp/blob/master/docs/Install.md
+#
 export PATH=~/.local/bin:$PATH
 export CARP_DIR=~/Carp/
 
