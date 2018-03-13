@@ -89,7 +89,7 @@ chmod 600 "${SSH_ENV}"
 export PATH=$PATH:/.rvm/bin # Add RVM to PATH for scripting
 export PATH="/usr/local/mysql/bin:$PATH"
 export PATH="$HOME/Library/Haskell/bin:$PATH" # add Haskell to path
-# source $HOME/.cargo/env # Add cargo (Rust) to path
+export PATH="$HOME/.cargo/bin:$PATH" # Add cargo (Rust) to path
 export GOPATH=$HOME/go # Add go path
 export PATH=$PATH:$GOPATH/bin
 export EDITOR='nvim'
@@ -116,18 +116,22 @@ export PATH=/Users/andrescuervo/.local/bin/luna-studio:$PATH
 # Set up portable Emscripten to path
 # Followed this tutorial: https://kripken.github.io/emscripten-site/docs/getting_started/downloads.html#installation-instructions
 # Adding directories to PATH:
-export PATH=/Users/andrescuervo/code/emsdk-portable/clang/e1.37.28_64bit:$PATH
+# export PATH=/Users/andrescuervo/code/emsdk-portable/clang/e1.37.28_64bit:$PATH
 # export PATH=/Users/andrescuervo/code/emsdk-portable/node/4.1.1_64bit/bin:$PATH
 export PATH=/Users/andrescuervo/code/emsdk-portable/emscripten/1.37.28:$PATH
 # Setting environment variables:
 export EMSDK=/Users/andrescuervo/code/emsdk-portable:$PATH
 export BINARYEN_ROOT=/Users/andrescuervo/code/emsdk-portable/clang/e1.37.28_64bit/binaryen:$PATH
 export EMSCRIPTEN=/Users/andrescuervo/code/emsdk-portable/emscripten/1.37.28:$PATH
-#
-# Add these lines for Carp installation: https://github.com/carp-lang/Carp/blob/master/docs/Install.md
-#
-export PATH=~/.local/bin:$PATH
-export CARP_DIR=~/Carp/
 
+# Add these lines for Carp installation: https://github.com/carp-lang/Carp/blob/master/docs/Install.md
+export PATH=/Users/andrescuervo/.local/bin:$PATH
+export CARP_DIR=/Users/andrescuervo/Carp/
+
+# Homebrew CLANG + LLVM magic:
+# from: https://embeddedartistry.com/blog/2017/2/20/installing-clangllvm-on-osx
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+# export CC="clang"
+# export CXX=$(CC)++
 
 export MAKEFLAGS="-j8 -s"
