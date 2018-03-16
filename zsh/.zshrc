@@ -99,9 +99,6 @@ if [ -f $(brew --prefix)/etc/brew-wrap ];then
   source $(brew --prefix)/etc/brew-wrap
 fi
 
-# Add Homebrew GH token for ssl
-export HOMEBREW_GITHUB_API_TOKEN="f5ac2a69dfb8b873a331f0999303671c566f6c1a"
-
 # Set Java Version manually to 1.8 ugh
 # Can us/usr/libexec/java_home -V to show you the Java JDK versions available on your computer
 # export JAVA_HOME=`/usr/libexec/java_home -v 1.8` (For example) changes your
