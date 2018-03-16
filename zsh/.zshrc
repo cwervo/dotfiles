@@ -99,6 +99,9 @@ if [ -f $(brew --prefix)/etc/brew-wrap ];then
   source $(brew --prefix)/etc/brew-wrap
 fi
 
+# Add Homebrew GH token for ssl
+export HOMEBREW_GITHUB_API_TOKEN="f5ac2a69dfb8b873a331f0999303671c566f6c1a"
+
 # Set Java Version manually to 1.8 ugh
 # Can us/usr/libexec/java_home -V to show you the Java JDK versions available on your computer
 # export JAVA_HOME=`/usr/libexec/java_home -v 1.8` (For example) changes your
@@ -113,16 +116,23 @@ setopt interactivecomments
 
 export PATH=/Users/andrescuervo/.local/bin/luna-studio:$PATH
 
-# Set up portable Emscripten to path
-# Followed this tutorial: https://kripken.github.io/emscripten-site/docs/getting_started/downloads.html#installation-instructions
+# Add: https://github.com/kripken/emscripten
+# This source script prints out some info whenever a shell spawns though, so
+# I'm piping it to dev/null to supress this.
+#
+# Output for reference:
 # Adding directories to PATH:
-# export PATH=/Users/andrescuervo/code/emsdk-portable/clang/e1.37.28_64bit:$PATH
-# export PATH=/Users/andrescuervo/code/emsdk-portable/node/4.1.1_64bit/bin:$PATH
-export PATH=/Users/andrescuervo/code/emsdk-portable/emscripten/1.37.28:$PATH
+# PATH += /Users/andrescuervo/code/emsdk
+# PATH += /Users/andrescuervo/code/emsdk/clang/e1.37.36_64bit
+# PATH += /Users/andrescuervo/code/emsdk/node/8.9.1_64bit/bin
+# PATH += /Users/andrescuervo/code/emsdk/emscripten/1.37.36
+#
 # Setting environment variables:
-export EMSDK=/Users/andrescuervo/code/emsdk-portable:$PATH
-export BINARYEN_ROOT=/Users/andrescuervo/code/emsdk-portable/clang/e1.37.28_64bit/binaryen:$PATH
-export EMSCRIPTEN=/Users/andrescuervo/code/emsdk-portable/emscripten/1.37.28:$PATH
+# EMSDK = /Users/andrescuervo/code/emsdk
+# EM_CONFIG = /Users/andrescuervo/.emscripten
+# BINARYEN_ROOT = /Users/andrescuervo/code/emsdk/clang/e1.37.36_64bit/binaryen
+# EMSCRIPTEN = /Users/andrescuervo/code/emsdk/emscripten/1.37.36
+source ~/code/emsdk/emsdk_env.sh &> /dev/null
 
 # Add these lines for Carp installation: https://github.com/carp-lang/Carp/blob/master/docs/Install.md
 export PATH=/Users/andrescuervo/.local/bin:$PATH

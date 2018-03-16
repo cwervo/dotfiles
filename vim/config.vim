@@ -179,3 +179,8 @@ set complete=.,w,b,u,U
 " Folds
 " --------------
 set fdc=1
+
+" --------------
+" Carp syntax hack
+" --------------
+au BufNewFile,BufRead,BufReadPost *.carp set filetype=clojure
