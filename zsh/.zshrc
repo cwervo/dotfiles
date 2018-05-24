@@ -142,3 +142,16 @@ export PATH="/usr/local/opt/llvm/bin:$PATH"
 # export CXX=$(CC)++
 
 export MAKEFLAGS="-j8 -s"
+# Magic Leap stuff, for future reference:
+# source ~/MagicLeap/mlsdk/v0.11.1/envsetup.sh
+#
+# cd ~/MagicLeap/mlsdk/v0.11.1/VirtualDevice
+# source mlvdsetup.sh
+# cd - &> /dev/null
+#
+# # The following assumes GLAD downloaded & installed in the specified place
+# #     GLWF install from ML docs: http://glad.dav1d.de/#profile=core&specification=gl&api=gl%3D4.3&api=gles1%3Dnone&api=gles2%3Dnone&api=glsc2%3Dnone&language=c&loader=on
+# # And GLFW installed via standard Homebrew (brew install glfw)
+# export GLFW_INCS=/usr/local/Cellar/glfw/3.2.1/include
+# export GLFW_LIBS=/usr/local/Cellar/glfw/3.2.1/lib
+# export GLAD_ROOT=~/code/glad
