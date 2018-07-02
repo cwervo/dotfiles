@@ -1,6 +1,8 @@
 vim/bundle/*
 vim/.netrwhist
 vim/Session.vim
+vim/.backup/*
+vim/.undo/*
 
 
 tmux/plugins/*
