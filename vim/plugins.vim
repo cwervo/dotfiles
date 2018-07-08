@@ -26,12 +26,6 @@ Plug 'ap/vim-css-color'
 " Remove bad whitespace
 Plug 'bitc/vim-bad-whitespace'
 
-" Rust syntax
-Plug 'rust-lang/rust.vim'
-
-" JSON syntax
-Plug 'elzr/vim-json'
-
 " Alters vim search with true incremental search and
 " search result numbering in the statusline
 Plug 'osyo-manga/vim-anzu'
@@ -93,10 +87,6 @@ Plug 'yssl/QFEnter'
 Plug 'ervandew/supertab'
 " Tabs!!!
 Plug 'godlygeek/tabular'
-" LESS Syntax
-Plug 'groenewege/vim-less'
-" CSS3 Syntax
-Plug 'hail2u/vim-css3-syntax'
 
 " Emmet HTML expansion.
 Plug 'mattn/emmet-vim'
@@ -108,20 +98,22 @@ Plug 'airblade/vim-gitgutter'
 " Vim Indent Guides with <leader>ig
 Plug 'nathanaelkane/vim-indent-guides'
 
-" HTML5 syntax
-Plug 'othree/html5.vim'
-
-" Javascript syntax
-Plug 'pangloss/vim-javascript'
-
-" Javascript JSX templates
-Plug 'mxw/vim-jsx'
 " Flow support :)
 Plug 'flowtype/vim-flow'
 
-" Markdown syntax
-Plug 'plasticboy/vim-markdown'
-Plug 'suan/vim-instant-markdown'
+" Markdown preview
+" NOTE: Requires rust to be installed on the machine. https://www.rust-lang.org/en-US/install.html
+" From: https://github.com/euclio/vim-markdown-composer
+function! BuildComposer(info)
+  if a:info.status != 'unchanged' || a:info.force
+    if has('nvim')
+      !cargo build --release
+    else
+      !cargo build --release --no-default-features --features json-rpc
+    endif
+  endif
+endfunction
+Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 
 " Autocomplete brackets, parens, and quotes
 Plug 'Raimondi/delimitMate'
@@ -164,6 +156,10 @@ endif
 Plug 'machakann/vim-highlightedyank'
 
 Plug 'vim-syntastic/syntastic'
+
+" Lazy-load a bunch of should-be-standard extensions (replaces a bunch of
+" extensions that I added individually)
+Plug 'sheerun/vim-polyglot'
 
 " Unmanaged plugin (manually installed and updated)
 " Plug '~/my-prototype-plugin'
