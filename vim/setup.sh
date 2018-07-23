@@ -1,6 +1,7 @@
 #! /bin/sh
 
 brew install neovim
+mkdir -p ~/.config/nvim
 
 pip3 install --user neovim # neovim Python 3 package
 echo " ✨✨✨✨✨ \nPlease enter your system password (to install neovim Python 2.7 package): "
