@@ -21,3 +21,4 @@ tmux
 tree
 vim
 yarn
+python2
