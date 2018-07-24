@@ -3,3 +3,4 @@
 ./tmux/setup-tmux.sh
 ./vim/setup.sh
 ./zsh/setup-z.sh
+./setup-rust.sh
