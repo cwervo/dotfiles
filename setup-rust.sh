@@ -19,9 +19,10 @@ else
     brew unlink libpng &&  brew unlink libtiff && brew unlink libjpeg
     cargo install bpb
     # Relink though because they're necessary for a bunch of other depedencies!
-    bpb init  "AndresCuervo <andrescuervor@gmail.com>"
     brew link libpng &&  brew link libtiff && brew link libjpeg
-    git config --global gpg.program ~/dotfiles/rust/bpb.sh
+
+    bpb init  "AndrésCuervo <andrescuervor@gmail.com>"
+    git config --global gpg.program bpb
     echo "---------- Hi, go add this PGP key to your Github & Gitlab accounts :))  -------"
     bpb print
 fi
