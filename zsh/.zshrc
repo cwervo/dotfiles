@@ -113,6 +113,12 @@ setopt interactivecomments
 
 export PATH=/Users/andrescuervo/.local/bin/luna-studio:$PATH
 
+# Note: this assumes you've downloaded the following link:
+# https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads
+# into the path ~/code/tomu-code
+# For more info see: http://tomu.im/
+export PATH=$PATH:~/code/tomu-code/gcc-arm-none-eabi-7-2018-q2-update/bin
+
 # Add: https://github.com/kripken/emscripten
 # This source script prints out some info whenever a shell spawns though, so
 # I'm piping it to dev/null to supress this.
