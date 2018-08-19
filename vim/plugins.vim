@@ -160,6 +160,7 @@ Plug 'vim-syntastic/syntastic'
 " Lazy-load a bunch of should-be-standard extensions (replaces a bunch of
 " extensions that I added individually)
 Plug 'sheerun/vim-polyglot'
+Plug 'jxnblk/vim-mdx-js'
 
 " Unmanaged plugin (manually installed and updated)
 " Plug '~/my-prototype-plugin'
