@@ -6,12 +6,6 @@ else
     rustup default nightly
 fi
 
-if hash rg 2>/dev/null; then
-    echo "Already have ripgrep, skipping."
-else
-    cargo install ripgrep
-fi
-
 if hash bpb 2>/dev/null; then
     echo "Already have bpb, skipping."
 else
