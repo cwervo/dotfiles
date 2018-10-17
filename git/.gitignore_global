@@ -774,3 +774,6 @@ dkms.conf
 
 # Ada Library Information
 *.ali
+
+# Boot
+.nrepl-history
