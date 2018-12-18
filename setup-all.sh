@@ -4,3 +4,4 @@
 ./vim/setup.sh
 ./setup-rust.sh
 ./zsh/setup-z.sh
+./hyper/install-hyper.rb

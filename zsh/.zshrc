@@ -161,3 +161,9 @@ export MAKEFLAGS="-j8 -s"
 # export GLFW_INCS=/usr/local/Cellar/glfw/3.2.1/include
 # export GLFW_LIBS=/usr/local/Cellar/glfw/3.2.1/lib
 # export GLAD_ROOT=~/code/glad
+export PATH=~/.npm-global/bin:$PATH
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/cuervoa/code/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/cuervoa/code/google-cloud-sdk/path.zsh.inc'; fi
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/cuervoa/code/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/cuervoa/code/google-cloud-sdk/completion.zsh.inc'; fi
