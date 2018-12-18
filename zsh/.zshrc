@@ -100,10 +100,10 @@ if [ -f $(brew --prefix)/etc/brew-wrap ];then
 fi
 
 # Set Java Version manually to 1.8 ugh
-# Can us/usr/libexec/java_home -V to show you the Java JDK versions available on your computer
+# Can use /usr/libexec/java_home -V to show you the Java JDK versions available on your computer
 # export JAVA_HOME=`/usr/libexec/java_home -v 1.8` (For example) changes your
 # Java version to 1.8 (JDK 8) so I put that at the bottom of my .zshrc for now,
-# until the Clojure ecosystem can handle Java 9
+# until the Clojure ecosystem (Figwheel/Sidecar/Java.xml.bind specifically) can handle Java 9
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 source ~/dotfiles/zsh/aliases.sh
@@ -167,3 +167,4 @@ export PATH=~/.npm-global/bin:$PATH
 if [ -f '/Users/cuervoa/code/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/cuervoa/code/google-cloud-sdk/path.zsh.inc'; fi
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/cuervoa/code/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/cuervoa/code/google-cloud-sdk/completion.zsh.inc'; fi
+export HOUDINI_UISCALE=160
