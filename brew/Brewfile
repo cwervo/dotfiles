@@ -21,6 +21,8 @@ brew "lame"
 brew "x264"
 # High-performance, high-quality MPEG-4 video library
 brew "xvid"
+# General-purpose data compression with high compression ratio
+brew "xz"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Library for manipulating PNG images
@@ -37,6 +39,8 @@ brew "gdbm"
 brew "gettext"
 # GIF image/animation creator/editor
 brew "gifsicle"
+# Perl compatible regular expressions library with a new API
+brew "pcre2"
 # Distributed revision control system
 brew "git"
 # Open source programming language to build simple/reliable/efficient software
@@ -49,8 +53,6 @@ brew "graphviz"
 brew "hub"
 # C/C++ and Java libraries for Unicode and globalization
 brew "icu4c"
-# General-purpose data compression with high compression ratio
-brew "xz"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # malloc implementation emphasizing fragmentation avoidance
@@ -97,8 +99,6 @@ brew "nginx"
 brew "nmap"
 # Platform built on V8 to build network applications
 brew "node"
-# Perl compatible regular expressions library with a new API
-brew "pcre2"
 # Highly capable, feature-rich programming language
 brew "perl"
 # Manage compile and link flags for libraries
@@ -107,6 +107,8 @@ brew "pkg-config"
 brew "planck"
 # Optimizer for PNG files
 brew "pngcrush"
+# Monitor data's progress through a pipe
+brew "pv"
 # Command-line interface for SQLite
 brew "sqlite"
 # Interpreted, interactive, object-oriented programming language
@@ -131,4 +133,5 @@ brew "vim"
 brew "wget"
 # JavaScript package manager
 brew "yarn"
+cask "hammerspoon"
 cask "hyper"
