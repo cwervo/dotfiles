@@ -49,7 +49,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew bower web-search history history-substring-search dirhistory opp)
+plugins=(git brew bower web-search history history-substring-search dirhistory)
 zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa2 id_github
 
 # User configuration
