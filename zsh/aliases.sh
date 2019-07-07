@@ -168,3 +168,5 @@ alias kill-docker-containers='docker kill $(docker ps -q)'
 # Localtunnel alias
 # ------
 alias ltc="lt --subdomain cwervo"
+
+alias clone="git clone"
