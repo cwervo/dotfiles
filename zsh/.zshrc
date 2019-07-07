@@ -88,7 +88,6 @@ chmod 600 "${SSH_ENV}"
 
 export PATH=$PATH:/.rvm/bin # Add RVM to PATH for scripting
 export PATH="/usr/local/mysql/bin:$PATH"
-export PATH="$HOME/Library/Haskell/bin:$PATH" # add Haskell to path
 export PATH="$HOME/.cargo/bin:$PATH" # Add cargo (Rust) to path
 export GOPATH=$HOME/go # Add go path
 export PATH=$PATH:$GOPATH/bin

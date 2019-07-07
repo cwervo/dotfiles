@@ -162,6 +162,15 @@ Plug 'vim-syntastic/syntastic'
 Plug 'sheerun/vim-polyglot'
 Plug 'jxnblk/vim-mdx-js'
 
+" Official Tidal Cycles version:
+Plug 'tidalcycles/vim-tidal'
+" ----
+" Fork that doesn't require tmux:
+" Plug 'flupe/vim-tidal'
+" ----
+" Fork that just fixed tmux version, still requires `make install`
+" Plug 'purpleposeidon/vim-tidal'
+
 " Unmanaged plugin (manually installed and updated)
 " Plug '~/my-prototype-plugin'
 
