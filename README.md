@@ -1,4 +1,4 @@
-# My dotfiles
+# Andrés Cuervo's dotfiles
 
 ----
 
