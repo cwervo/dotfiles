@@ -103,7 +103,7 @@ fi
 # export JAVA_HOME=`/usr/libexec/java_home -v 1.8` (For example) changes your
 # Java version to 1.8 (JDK 8) so I put that at the bottom of my .zshrc for now,
 # until the Clojure ecosystem (Figwheel/Sidecar/Java.xml.bind specifically) can handle Java 9
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+# export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 source ~/dotfiles/zsh/aliases.sh
 source ~/dotfiles/zsh/npm-completion.sh
@@ -170,6 +170,10 @@ export HOUDINI_UISCALE=160
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# Get around ZSH needing to login
+# Found this source from: https://stackoverflow.com/questions/22773693/rvm-zsh-rvm-is-not-a-function-selecting-rubies-with-rvm-use-will-not-w
+source $HOME/.rvm/scripts/rvm
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
