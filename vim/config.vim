@@ -45,6 +45,12 @@ set title          " Set the title of the window in the terminal to the file
 if exists('+colorcolumn')
     set colorcolumn=80 " Color the 80th column differently as a wrapping guide.
 endif
+" Set to 750 on the advice of the post below
+" https://www.reddit.com/r/vim/comments/3ql651/what_do_you_set_your_updatetime_to/
+" This is useful for the gitgutter plugin, but shortens the delay for all
+" plugins as well, which is nice!
+" https://github.com/airblade/vim-gitgutter#troubleshooting
+set updatetime=750
 
 " ---------------
 " Behaviors
