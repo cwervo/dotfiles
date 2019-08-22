@@ -170,3 +170,9 @@ alias kill-docker-containers='docker kill $(docker ps -q)'
 alias ltc="lt --subdomain cwervo"
 
 alias clone="git clone"
+
+# ----
+# ripgrep aliases
+# ----
+# from: https://github.com/BurntSushi/ripgrep/issues/193#issuecomment-513201558
+alias rgf='rg --files | rg'
