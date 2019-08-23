@@ -1,3 +1,4 @@
+./setup-ruby-and-node.sh
 ./brew/setup-homebrew.sh
 ./git/setup-git.sh
 ./tmux/setup-tmux.sh
