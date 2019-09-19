@@ -80,6 +80,7 @@ alias tkpane='tmux kill-pane -t'
 # Start up a simple HTTP server with python, put a number after this to specifiy the port, i.e.
 # pyserve 8080
 alias pyserve='python -m SimpleHTTPServer'
+alias pyserve3='python -m http.server'
 alias py3='python3'
 
 
