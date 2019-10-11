@@ -5,6 +5,3 @@
 svg[class*='octicon-mark-github'] {
   transform: rotate(180deg);
 }
-
-/* Add some cream to it */
-body { background-color: papayawhip }
