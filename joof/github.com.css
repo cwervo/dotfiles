@@ -1,0 +1,10 @@
+/* Bump code font size */
+/* .blob-code-inner, .blob-num { font-size: 16px; } */
+
+/* Flip that logo */
+svg[class*='octicon-mark-github'] {
+  transform: rotate(180deg);
+}
+
+/* Add some cream to it */
+body { background-color: papayawhip }
