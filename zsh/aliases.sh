@@ -29,6 +29,12 @@ fi
 function video_to_gif() {
     ffmpeg -i $1 -vf scale=320:-1 -r 10 -f image2pipe -vcodec ppm - | convert -delay 5 -loop 0 - ${1%.*}.gif
 }
+function heics_to_png() {
+    for i in `ls *.heic`; do convert $i `basename $i .heic`.png; done
+}
+function heics_to_png() {
+    for i in `ls *.heic`; do convert $i `basename $i .heic`.png; done
+}
 
 alias vim-none='vim -u NONE "+set nocompatible" "+set hls" "+filetype plugin on" "+inoremap jk <Esc>" "+set number" "+set syntax" "+nnoremap fef mx=ggG=\`x" "+set cf"'
 alias cdof='cd ~/code/art/ofx9.8/'
