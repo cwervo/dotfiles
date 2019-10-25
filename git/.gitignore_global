@@ -564,7 +564,6 @@ luac.out
 *.o
 *.os
 *.ko
-*.obj
 *.elf
 
 # Precompiled Headers
@@ -689,7 +688,6 @@ erl_crash.dump
 # Object files
 *.o
 *.ko
-*.obj
 *.elf
 
 # Linker output
@@ -743,7 +741,6 @@ dkms.conf
 *.slo
 *.lo
 *.o
-*.obj
 
 # Precompiled Headers
 *.gch
