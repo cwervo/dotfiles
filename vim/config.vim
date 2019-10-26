@@ -57,9 +57,9 @@ set updatetime=100
 " Behaviors
 " ---------------
 syntax enable
-au BufRead,BufNewFile *.md set spell
-au BufRead,BufNewFile *.mkd set spell
-au BufRead,BufNewFile *.markdown set spell
+au BufRead,BufNewFile *.md set spell textwidth=80
+au BufRead,BufNewFile *.mkd set spell textwidth=80
+au BufRead,BufNewFile *.markdown set spell textwidth=80
 au BufRead,BufNewFile README set spell
 au BufRead,BufNewFile *.txt set spell
 set wildmenu            " visual autocomplete for command menu
