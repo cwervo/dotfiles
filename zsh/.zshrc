@@ -205,9 +205,9 @@ unset __conda_setup
 # Add Racket to path if it exists
 RACKETPATH=/Applications/Racket\ v7.4/bin
 if [ -d "$RACKETPATH" ]; then
-    echo "racket is installed"
+    # echo "racket is installed"
     export PATH=$PATH:$RACKETPATH
 else
-    echo "racket isn't installed"
+    # echo "racket isn't installed"
 fi
 echo 👋🏼
