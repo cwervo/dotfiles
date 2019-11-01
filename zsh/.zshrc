@@ -103,7 +103,10 @@ fi
 # export JAVA_HOME=`/usr/libexec/java_home -v 1.8` (For example) changes your
 # Java version to 1.8 (JDK 8) so I put that at the bottom of my .zshrc for now,
 # until the Clojure ecosystem (Figwheel/Sidecar/Java.xml.bind specifically) can handle Java 9
-# export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+# NOTE: This is, as far as I can tell as of 2019-10-31, the easiest way to get
+# `lein trampoline run -m clojure.main watch.clj`
+# to run in this guide: https://clojurescript.org/guides/javascript-modules
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 source ~/dotfiles/zsh/aliases.sh
 source ~/dotfiles/zsh/npm-completion.sh
@@ -184,8 +187,6 @@ export PATH="/usr/local/sbin:$PATH"
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
 [[ -f /Users/acuervo/code/khepri/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/acuervo/code/khepri/node_modules/tabtab/.completions/electron-forge.zsh
-
-source ~/dotfiles/zsh/conda-init.zsh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

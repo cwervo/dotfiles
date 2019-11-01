@@ -195,6 +195,6 @@ au BufNewFile,BufRead,BufReadPost *.carp set filetype=clojure
 " ------
 "  Conda config, based off of: https://gist.github.com/yeekeiji/8143b9174f87715f95aa14dd99679b5f
 " ------
-let g:python3_host_prog = '~/miniconda3/envs/neovim'
+" let g:python3_host_prog = '~/miniconda3/envs/neovim'
 " Don't know how to get python2 working, so deoplete is broken for now
 " let g:python_host_prog = '~/miniconda3/envs/neovim2'
