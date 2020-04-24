@@ -108,6 +108,12 @@ fi
 # to run in this guide: https://clojurescript.org/guides/javascript-modules
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
+# Link racket, if it exists!
+RACKETPATH=/Applications/Racket/bin
+if test -d "$RACKETPATH"; then
+    export PATH=$RACKETPATH:$PATH
+fi
+
 source ~/dotfiles/zsh/aliases.sh
 source ~/dotfiles/zsh/npm-completion.sh
 source ~/dotfiles/zsh/iTerm2-colors.sh
@@ -214,5 +220,5 @@ fi
 echo 👋🏼
 
 # nvm use lts/dubnium
-export VOLTA_HOME="/Users/acuervo/.volta"
+export VOLTA_HOME="/Users/andrescuervo/.volta"
 grep --silent "$VOLTA_HOME/bin" <<< $PATH || export PATH="$VOLTA_HOME/bin:$PATH"
