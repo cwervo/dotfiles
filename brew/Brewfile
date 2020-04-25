@@ -1,15 +1,21 @@
+tap "apenngrace/vulkan"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
-tap "indirect/tap"
+# Download with resuming and segmented downloading
+brew "aria2"
+# Build tooling for Clojure
+brew "boot-clj"
+# Command-line interface for Cabal and Hackage
+brew "cabal-install"
 # Library for manipulating PNG images
 brew "libpng"
 # Software library to render fonts
 brew "freetype"
 # GNU database manager
 brew "gdbm"
-# SSL/TLS cryptography library
-brew "openssl"
+# GNU internationalization (i18n) and localization (l10n) library
+brew "gettext", link: false
 # Perl compatible regular expressions library
 brew "pcre"
 # Library for command-line editing
@@ -20,12 +26,20 @@ brew "sqlite"
 brew "xz"
 # Interpreted, interactive, object-oriented programming language
 brew "python"
+# Readline wrapper: adds readline support to tools that lack it
+brew "rlwrap"
+# The Clojure Programming Language
+brew "clojure"
 # Cross-platform make
 brew "cmake"
 # Tool for browsing source code
 brew "cscope"
+# Library for USB device access
+brew "libusb"
 # USB programmer
 brew "dfu-util"
+# Command-line tool to interact with exercism.io
+brew "exercism"
 # Asynchronous event library
 brew "libevent"
 # C string library for manipulating Unicode strings
@@ -46,12 +60,18 @@ brew "x264"
 brew "xvid"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
-# GIF image/animation creator/editor
-brew "gifsicle"
 # Perl compatible regular expressions library with a new API
 brew "pcre2"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
+# Interpreter for PostScript and PDF
+brew "ghostscript"
+# GIF image/animation creator/editor
+brew "gifsicle"
 # Distributed revision control system
 brew "git"
+# Multi-platform library for OpenGL applications
+brew "glfw"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Generic library support script
@@ -62,18 +82,34 @@ brew "graphviz"
 brew "hub"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
+# Implementation of malloc emphasizing fragmentation avoidance
+brew "jemalloc"
 # Build tool for Clojure
 brew "leiningen"
+# Intel RealSense D400 series and SR300 capture
+brew "librealsense"
+# Library for processing keyboard entry from the terminal
+brew "libtermkey"
+# Multi-platform support library with a focus on asynchronous I/O
+brew "libuv"
+# C99 library which implements a VT220 or xterm terminal emulator
+brew "libvterm"
 # YAML Parser
 brew "libyaml"
 # C library for reading, creating, and modifying zip archives
 brew "libzip"
 # Powerful, lightweight programming language
 brew "lua"
+# Just-In-Time Compiler (JIT) for the Lua programming language
+brew "luajit"
 # Creates dependencies in makefiles
 brew "makedepend"
+# Library for a binary-based efficient data interchange format
+brew "msgpack"
 # NCurses Disk Usage
 brew "ncdu"
+# Very basic terminfo library
+brew "unibilium"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
@@ -90,14 +126,16 @@ brew "pkg-config"
 brew "planck"
 # Optimizer for PNG files
 brew "pngcrush"
+# Monitor data's progress through a pipe
+brew "pv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@2"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
-# Readline wrapper: adds readline support to tools that lack it
-brew "rlwrap"
 # Powerful, clean, object-oriented scripting language
-brew "ruby"
+brew "ruby", link: true
+# User interface to the TELNET protocol
+brew "telnet"
 # Programatically correct mistyped console commands
 brew "thefuck"
 # Text interface for Git repositories
@@ -112,6 +150,7 @@ brew "vim"
 brew "wget"
 # JavaScript package manager
 brew "yarn"
-# boats' personal barricade
-brew "indirect/tap/bpb"
+cask "hammerspoon"
 cask "hyper"
+cask "visual-studio-code"
+cask "vulkan-sdk"
