@@ -29,5 +29,7 @@
     "vim.handleKeys": {
       "<C-a>": false,
       "<C-f>": false
-    }
+    },
+    "vim.highlightedyank.enable": true,
+    "window.zoomLevel": 1
 }
