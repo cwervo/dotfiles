@@ -1,35 +1,54 @@
 {
-    "workbench.colorTheme": "SynthWave '84",
-    "vscode_custom_css.imports": [
-        "file:///Users/andrescuervo/.vscode-custom/synthwave84.css"
-    ],
-    "vscode_custom_css.policy": true,
-    "vim.easymotion": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.insertModeKeyBindings": [
-      {
-        "before": ["j", "k"],
-        "after": ["<Esc>"]
-      }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-      {
-        "before": ["<leader>", "d"],
-        "after": ["d", "d"]
-      },
-      {
-        "before": ["<C-n>"],
-        "commands": [":nohl"]
-      }
-    ],
-    "vim.leader": "<space>",
-    "vim.handleKeys": {
-      "<C-a>": false,
-      "<C-f>": false
+  "workbench.colorTheme": "SynthWave '84",
+  "vscode_custom_css.imports": [
+    "file:///Users/andrescuervo/.vscode-custom/synthwave84.css"
+  ],
+  "vscode_custom_css.policy": true,
+  "files.associations": {
+      "*.tidal": "haskell"
+  },
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
     },
-    "vim.highlightedyank.enable": true,
-    "window.zoomLevel": 1
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "vim.highlightedyank.enable": true,
+  "window.zoomLevel": 1,
+  "files.trimFinalNewlines": true
 }
