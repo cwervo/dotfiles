@@ -3,5 +3,5 @@
 
 /* Flip that logo */
 svg[class*='octicon-mark-github'] {
-  transform: rotate(180deg);
+  transform: rotate(270deg);
 }
