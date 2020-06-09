@@ -2,6 +2,8 @@ tap "apenngrace/vulkan"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
 # Download with resuming and segmented downloading
 brew "aria2"
 # Build tooling for Clojure
@@ -15,7 +17,7 @@ brew "freetype"
 # GNU database manager
 brew "gdbm"
 # GNU internationalization (i18n) and localization (l10n) library
-brew "gettext", link: false
+brew "gettext"
 # Perl compatible regular expressions library
 brew "pcre"
 # Library for command-line editing
@@ -24,8 +26,6 @@ brew "readline"
 brew "sqlite"
 # General-purpose data compression with high compression ratio
 brew "xz"
-# Interpreted, interactive, object-oriented programming language
-brew "python"
 # Readline wrapper: adds readline support to tools that lack it
 brew "rlwrap"
 # The Clojure Programming Language
@@ -40,6 +40,8 @@ brew "libusb"
 brew "dfu-util"
 # Command-line tool to interact with exercism.io
 brew "exercism"
+# Perl lib for reading and writing EXIF metadata
+brew "exiftool"
 # Asynchronous event library
 brew "libevent"
 # C string library for manipulating Unicode strings
@@ -54,6 +56,8 @@ brew "jpeg"
 brew "lame"
 # TIFF library and utilities
 brew "libtiff"
+# Interpreted, interactive, object-oriented programming language
+brew "python"
 # H.264/AVC encoder
 brew "x264"
 # High-performance, high-quality MPEG-4 video library
@@ -88,6 +92,8 @@ brew "jemalloc"
 brew "leiningen"
 # Intel RealSense D400 series and SR300 capture
 brew "librealsense"
+# Very basic terminfo library
+brew "unibilium"
 # Library for processing keyboard entry from the terminal
 brew "libtermkey"
 # Multi-platform support library with a focus on asynchronous I/O
@@ -108,8 +114,6 @@ brew "makedepend"
 brew "msgpack"
 # NCurses Disk Usage
 brew "ncdu"
-# Very basic terminfo library
-brew "unibilium"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
@@ -133,7 +137,7 @@ brew "python@2"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Powerful, clean, object-oriented scripting language
-brew "ruby", link: true
+brew "ruby"
 # User interface to the TELNET protocol
 brew "telnet"
 # Programatically correct mistyped console commands
@@ -150,6 +154,7 @@ brew "vim"
 brew "wget"
 # JavaScript package manager
 brew "yarn"
+cask "godot"
 cask "hammerspoon"
 cask "hyper"
 cask "visual-studio-code"
