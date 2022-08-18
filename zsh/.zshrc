@@ -200,10 +200,10 @@ __conda_setup="$('/Users/andrescuervo/miniconda3/bin/conda' 'shell.zsh' 'hook' 2
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/andrescuervo/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/andrescuervo/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "~/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "~/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/andrescuervo/miniconda3/bin:$PATH"
+        export PATH="~/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -220,5 +220,5 @@ fi
 echo 👋🏼
 
 # nvm use lts/dubnium
-export VOLTA_HOME="/Users/andrescuervo/.volta"
+export VOLTA_HOME="~/.volta"
 grep --silent "$VOLTA_HOME/bin" <<< $PATH || export PATH="$VOLTA_HOME/bin:$PATH"
