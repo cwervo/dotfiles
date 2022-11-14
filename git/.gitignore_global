@@ -774,3 +774,5 @@ dkms.conf
 
 # Boot
 .nrepl-history
+
+.vscode

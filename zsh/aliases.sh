@@ -29,6 +29,14 @@ fi
 function video_to_gif() {
     ffmpeg -i $1 -vf scale=320:-1 -r 10 -f image2pipe -vcodec ppm - | convert -delay 5 -loop 0 - ${1%.*}.gif
 }
+
+
+function doublevideo() {
+    ffmpeg -i $1 -vf  "setpts=0.5*PTS" 2x-$1
+}
+
+
+
 function heics_to_png() {
     for i in `ls *.heic`; do convert $i `basename $i .heic`.png; done
 }

@@ -49,6 +49,13 @@
     "<C-f>": false
   },
   "vim.highlightedyank.enable": true,
-  "window.zoomLevel": 1,
-  "files.trimFinalNewlines": true
+  "window.zoomLevel": 2,
+  "files.trimFinalNewlines": true,
+"security.workspace.trust.untrustedFiles": "open",
+  "json.schemas": [],
+  "explorer.confirmDragAndDrop": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.startupEditor": "none"
 }

@@ -222,3 +222,7 @@ echo 👋🏼
 # nvm use lts/dubnium
 export VOLTA_HOME="/Users/andrescuervo/.volta"
 grep --silent "$VOLTA_HOME/bin" <<< $PATH || export PATH="$VOLTA_HOME/bin:$PATH"
+
+export WASMTIME_HOME="$HOME/.wasmtime"
+
+export PATH="$WASMTIME_HOME/bin:$PATH"
