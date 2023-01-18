@@ -32,7 +32,7 @@ function video_to_gif() {
 
 
 function doublevideo() {
-    ffmpeg -i $1 -vf  "setpts=0.5*PTS" 2x-$1
+    ffmpeg -i $1 -vcodec libx264 -vf  "setpts=0.5*PTS" 2x-$1.mp4
 }
 
 
@@ -191,3 +191,7 @@ alias clone="git clone"
 # ----
 # from: https://github.com/BurntSushi/ripgrep/issues/193#issuecomment-513201558
 alias rgf='rg --files | rg'
+
+function b64() {
+    openssl base64 -in $1 -out $1.64.txt
+}

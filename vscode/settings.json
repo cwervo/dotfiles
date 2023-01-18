@@ -49,7 +49,6 @@
     "<C-f>": false
   },
   "vim.highlightedyank.enable": true,
-  "window.zoomLevel": 2,
   "files.trimFinalNewlines": true,
 "security.workspace.trust.untrustedFiles": "open",
   "json.schemas": [],
@@ -57,5 +56,6 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "window.zoomLevel": 2
 }

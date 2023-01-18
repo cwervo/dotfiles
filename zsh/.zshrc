@@ -226,3 +226,4 @@ grep --silent "$VOLTA_HOME/bin" <<< $PATH || export PATH="$VOLTA_HOME/bin:$PATH"
 export WASMTIME_HOME="$HOME/.wasmtime"
 
 export PATH="$WASMTIME_HOME/bin:$PATH"
+export PATH="$HOME/code/radio-deps/arm-unknown-linux-gnueabihf/bin:$PATH"
