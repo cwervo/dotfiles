@@ -128,10 +128,10 @@ function gr() {
     cd $git_root
 }
 # Amend commiting to use GPG signing
-unalias gcmsg
-alias gcmsg='git commit -S -m'
-unalias gc
-alias gc='git commit -S -v'
+# unalias gcmsg
+# alias gcmsg='git commit -S -m'
+# unalias gc
+# alias gc='git commit -S -v'
 
 # Git diff, no whitespace
 alias gdw='gd -w'

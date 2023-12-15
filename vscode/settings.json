@@ -5,7 +5,8 @@
   ],
   "vscode_custom_css.policy": true,
   "files.associations": {
-      "*.tidal": "haskell"
+    "*.tidal": "haskell",
+    "*.folk": "tcl"
   },
   "vim.easymotion": true,
   "vim.incsearch": true,
@@ -57,5 +58,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.startupEditor": "none",
+"editor.inlineSuggest.enabled": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": false,
   "window.zoomLevel": 2
 }

@@ -106,7 +106,7 @@ fi
 # NOTE: This is, as far as I can tell as of 2019-10-31, the easiest way to get
 # `lein trampoline run -m clojure.main watch.clj`
 # to run in this guide: https://clojurescript.org/guides/javascript-modules
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+# export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 # Link racket, if it exists!
 RACKETPATH=/Applications/Racket/bin
