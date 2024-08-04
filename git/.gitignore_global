@@ -776,3 +776,5 @@ dkms.conf
 .nrepl-history
 
 .vscode
+
+*.private.txt
