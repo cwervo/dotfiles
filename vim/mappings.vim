@@ -66,7 +66,7 @@ nmap <Esc><Esc> <Plug>(anzu-clear-search-status)
 " Help from: http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
 function! GoToCurrentFileDir()
     :cd %:p:h
-    :echo "Cd'd to '" expand("%:p:h") "'?"
+    :echo "Cd'd to '" . expand("%:p:h") . "'"
 endfunction
 
 command! GoToCurrentFileDir execute GoToCurrentFileDir()

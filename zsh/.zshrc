@@ -226,4 +226,9 @@ grep --silent "$VOLTA_HOME/bin" <<< $PATH || export PATH="$VOLTA_HOME/bin:$PATH"
 export WASMTIME_HOME="$HOME/.wasmtime"
 
 export PATH="$WASMTIME_HOME/bin:$PATH"
-export PATH="$HOME/code/radio-deps/arm-unknown-linux-gnueabihf/bin:$PATH"
+export PATH="$HOME/code/radio-deps/arm-unknown-linux-gnueabihf/bin:$PATH"export PATH="/opt/homebrew/opt/tcl-tk@8/bin:$PATH"
+
+export PATH="/Users/cwervo/code/flutter/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+. "$HOME/.local/bin/env"

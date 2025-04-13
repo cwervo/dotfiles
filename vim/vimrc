@@ -15,3 +15,6 @@ endif
 
 " colorscheme vimspectr60-light
 colorscheme seoul256
+
+
+let g:python3_host_prog = expand('~/.config/nvim/py_env/bin/python')
