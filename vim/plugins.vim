@@ -13,7 +13,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'junegunn/seoul256.vim'
 " Plug 'vim-scripts/ecostation'
 " Plug 'sickill/vim-monokai'
-" Plug 'tomasr/molokai'
+Plug 'tomasr/molokai'
 " Plug 'NLKNguyen/papercolor-theme'
 
 " Plug 'junegunn/vim-easy-align'

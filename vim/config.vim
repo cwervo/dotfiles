@@ -12,6 +12,8 @@ if $TERM =~ "-256color"
     set t_Co=256
 endif
 
+colorscheme molokai
+
 au BufNewFile,BufRead *.rs set filetype=rust
 
 " ---------------
@@ -164,6 +166,11 @@ set listchars+=extends:>
 " The character to show in the last column when wrap is off and the line
 " continues beyond the right of the screen
 set listchars+=precedes:<
+
+" Cursor color settings
+highlight Cursor ctermfg=white ctermbg=black guifg=white guibg=black
+highlight iCursor ctermfg=white ctermbg=black guifg=white guibg=black
+highlight Visual ctermfg=white ctermbg=black guifg=white guibg=black
 
 " ---------------
 " Sounds
