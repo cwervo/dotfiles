@@ -1,11 +1,14 @@
 " -----
 " Color
 " -----
-" let g:seoul256_background = 235
-colorscheme seoul256
-" colorscheme jellybeans
-" colorscheme monokai
-" colorscheme Tomorrow-Night-Blue
+set background=dark
+"let g:seoul256_background = 235
+"colorscheme seoul256
+"colorscheme jellybeans
+"colorscheme monokai
+"colorscheme darkblue " Like being under the ocean 🌊
+"colorscheme PaperColor " Lovely, easy on the eyes, vintage colors 👾💾📀
+ colorscheme retrobox
 
 " --------------
 " Sytastic stuff

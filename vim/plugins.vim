@@ -6,15 +6,15 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Plug 'junegunn/vim-easy-align'
 
 " " Themes
-" Plug 'dracula/vim'
-" " Plug 'ryanoasis/vim-devicons'
-" Plug 'nanotech/jellybeans.vim'
-" Plug 'chriskempson/vim-tomorrow-theme'
+Plug 'vim-scripts/ecostation'
+Plug 'nanotech/jellybeans.vim'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'junegunn/seoul256.vim'
-" Plug 'vim-scripts/ecostation'
-" Plug 'sickill/vim-monokai'
 Plug 'tomasr/molokai'
-" Plug 'NLKNguyen/papercolor-theme'
+Plug 'chriskempson/vim-tomorrow-theme'
+" Plug 'sickill/vim-monokai'
+" Plug 'dracula/vim'
+" Plug 'ryanoasis/vim-devicons'
 
 " Plug 'junegunn/vim-easy-align'
 Plug 'vim-airline/vim-airline'
@@ -33,7 +33,7 @@ Plug 'osyo-manga/vim-anzu'
 " Plug 'bronson/vim-visual-star-search'
 
 " " Fuzzy file search with Ctrl P
-" Plug 'ctrlpvim/ctrlp.vim'
+ Plug 'ctrlpvim/ctrlp.vim'
 
 " " gc{motion} comments out the motion, gcc comments linewise
 " Plug 'tomtom/tcomment_vim'

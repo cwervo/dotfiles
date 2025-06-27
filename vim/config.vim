@@ -12,9 +12,8 @@ if $TERM =~ "-256color"
     set t_Co=256
 endif
 
-colorscheme molokai
-
 au BufNewFile,BufRead *.rs set filetype=rust
+au BufNewFile,BufRead *.folk set filetype=tcl
 
 " ---------------
 " File Locations
@@ -145,7 +144,13 @@ vnoremap # :<C-u>call <SID>VSetSearch()<CR>??<CR>)
 " ---------------
 highlight LineNr ctermfg=30
 set cursorline
+
+highlight Cursor ctermfg=white ctermbg=black guifg=white guibg=black
+highlight iCursor ctermfg=white ctermbg=black guifg=white guibg=black
+highlight Visual ctermfg=white ctermbg=black guifg=white guibg=black
+
 highlight cursorline term=underline cterm=underline
+
 set showmatch   " Show matching brackets.
 set matchtime=2 " How many tenths of a second to blink
 " Show invisible characters
