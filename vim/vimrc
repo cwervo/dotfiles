@@ -13,8 +13,4 @@ if has('nvim')
     set inccommand=nosplit " Preview changes live when using :s/ or :%s/
 endif
 
-" colorscheme vimspectr60-light
-colorscheme seoul256
-
-
 let g:python3_host_prog = expand('~/.config/nvim/py_env/bin/python')
