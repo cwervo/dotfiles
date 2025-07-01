@@ -33,7 +33,7 @@ Plug 'osyo-manga/vim-anzu'
 " Plug 'bronson/vim-visual-star-search'
 
 " " Fuzzy file search with Ctrl P
- Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " " gc{motion} comments out the motion, gcc comments linewise
 " Plug 'tomtom/tcomment_vim'

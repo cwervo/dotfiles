@@ -145,11 +145,13 @@ vnoremap # :<C-u>call <SID>VSetSearch()<CR>??<CR>)
 highlight LineNr ctermfg=30
 set cursorline
 
+highlight cursorline term=underline cterm=underline
+
+" Cursor color settings
 highlight Cursor ctermfg=white ctermbg=black guifg=white guibg=black
 highlight iCursor ctermfg=white ctermbg=black guifg=white guibg=black
 highlight Visual ctermfg=white ctermbg=black guifg=white guibg=black
 
-highlight cursorline term=underline cterm=underline
 
 set showmatch   " Show matching brackets.
 set matchtime=2 " How many tenths of a second to blink
@@ -171,11 +173,6 @@ set listchars+=extends:>
 " The character to show in the last column when wrap is off and the line
 " continues beyond the right of the screen
 set listchars+=precedes:<
-
-" Cursor color settings
-highlight Cursor ctermfg=white ctermbg=black guifg=white guibg=black
-highlight iCursor ctermfg=white ctermbg=black guifg=white guibg=black
-highlight Visual ctermfg=white ctermbg=black guifg=white guibg=black
 
 " ---------------
 " Sounds
