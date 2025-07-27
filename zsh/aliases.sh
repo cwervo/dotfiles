@@ -19,6 +19,7 @@ alias cdvg='cd ~/webProjects/p5/videoGame && cl'
 alias colorsinfo='sed -n "23,36p" ~/.zsh/lscolors'
 alias battery='pmset -g ps'
 alias batt='battery'
+alias folk2='make remote FOLK_REMOTE_NODE=folk@folk0.local'
 
 if [ -n "${EDITOR}" ]; then
     alias v='$EDITOR'

@@ -232,3 +232,8 @@ export PATH="/Users/cwervo/code/flutter/bin:$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
 . "$HOME/.local/bin/env"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/cwervo/.lmstudio/bin"
+# End of LM Studio CLI section
+
