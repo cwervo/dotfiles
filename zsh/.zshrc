@@ -237,3 +237,5 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="$PATH:/Users/cwervo/.lmstudio/bin"
 # End of LM Studio CLI section
 
+# Dart pub-cache
+export PATH="$PATH":"$HOME/.pub-cache/bin"
