@@ -239,3 +239,5 @@ export PATH="$PATH:/Users/cwervo/.lmstudio/bin"
 
 # Dart pub-cache
 export PATH="$PATH":"$HOME/.pub-cache/bin"
+export OCEAN_DEVELOPMENT_PATH="/Users/cwervo/code/ocean"
+export FOLK_REMOTE_NODE="folk@folk-cwe.local"
