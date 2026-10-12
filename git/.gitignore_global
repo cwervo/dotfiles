@@ -779,3 +779,10 @@ dkms.conf
 
 *.private.txt
 CLAUDE.md
+status.md
+ARCHITECTURE.md
+GEMINI.md
+SYMBOLS.md
+vendor/apriltag/build
+
+**/.claude/settings.local.json

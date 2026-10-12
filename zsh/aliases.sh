@@ -196,3 +196,7 @@ alias rgf='rg --files | rg'
 function b64() {
     openssl base64 -in $1 -out $1.64.txt
 }
+
+# Antigravity CLI
+# Overrides the agy() in /etc/zshrc, which passes a bogus timestamp to --new-project
+agy() { command agy --dangerously-skip-permissions "$@"; }

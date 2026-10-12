@@ -240,4 +240,24 @@ export PATH="$PATH:/Users/cwervo/.lmstudio/bin"
 # Dart pub-cache
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 export OCEAN_DEVELOPMENT_PATH="/Users/cwervo/code/ocean"
+
+# Folk
 export FOLK_REMOTE_NODE="folk@folk-cwe.local"
+
+# General Homebrew prefixes
+export CPATH="/opt/homebrew/include:$CPATH"
+export LIBRARY_PATH="/opt/homebrew/lib:$LIBRARY_PATH"
+
+# Keg-only Homebrew dependencies required by Folk
+export CPATH="$(brew --prefix jpeg-turbo)/include:$(brew --prefix openssl)/include:$(brew --prefix glfw)/include:$CPATH"
+export LIBRARY_PATH="$(brew --prefix jpeg-turbo)/lib:$(brew --prefix openssl)/lib:$(brew --prefix glfw)/lib:$LIBRARY_PATH"
+
+# Added by Antigravity IDE
+export PATH="/Users/cwervo/.antigravity-ide/antigravity-ide/bin:$PATH"
+
+
+# Added by Antigravity CLI installer
+export PATH="/Users/cwervo/.local/bin:$PATH"
+
+# Alias to list today's agy chats
+alias agyl='find ~/.gemini/antigravity-cli/brain -mindepth 1 -maxdepth 1 -type d -newermt "$(date +%Y-%m-%d)" -exec stat -f "%Sm %N" -t "%H:%M" {} + | sed "s|/Users/.*/brain/||" | sort'
