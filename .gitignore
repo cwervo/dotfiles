@@ -1,4 +1,5 @@
 vim/bundle/*
+vim/autoload/*
 vim/.netrwhist
 vim/Session.vim
 vim/.backup/*
