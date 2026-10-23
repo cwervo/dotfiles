@@ -21,6 +21,7 @@ alias battery='pmset -g ps'
 alias batt='battery'
 alias folk2='make remote FOLK_REMOTE_NODE=folk@folk0.local'
 
+alias vim='nvim'
 if [ -n "${EDITOR}" ]; then
     alias v='$EDITOR'
 else
